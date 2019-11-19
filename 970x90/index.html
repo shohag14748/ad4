@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 top reasons</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto+Condensed:400,700|Nunito&display=swap" rel="stylesheet">
+    <style>
+        .ad-wrap{
+            display: inline-block;
+        }
+        
+        /* ----- Ad 970x90 ----- */
+        
+        
+        .ad970x90{  
+            width: 970px;
+            height: 90px;
+            background: #999;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+        .ad970x90 .slide1{
+            background-image: linear-gradient(rgba(33,62,128,.7) ,rgba(33,62,128,.7)),url(image/DoorKnock.jpg);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 100% auto;
+            transform: scale(3);
+            transform: scale(3);
+            background-position: center 17%;
+            background-repeat: no-repeat;
+            animation: slide1 1.5s ease;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes slide1{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .ad970x90 .slide1-text{
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            width: 970px;
+            font-family: 'Domine', serif;
+            font-size: 35px;
+            padding: 25px 0;
+            margin: 0;
+            text-shadow: 1px 2px 10px #000;
+            animation-fill-mode: forwards;
+            animation-delay: .5s;
+            text-align: center;
+            
+        }
+        
+        .ad970x90 .slide2-image{
+            position: absolute;
+            width: 100%;
+            top: -105%;
+            right: 0;
+            opacity: 0;
+            transform: scale(3);
+            animation: slide2 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+        
+        @keyframes slide2{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .ad970x90 .slide2 .texts{
+            position: absolute;
+            color: #fff;
+            font-family: 'Domine', serif;
+            font-size: 20px;
+            bottom: 0;
+            margin-left: 120px;
+            animation: texts 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 8s;
+            width: 100%;    
+            
+        }
+        @keyframes texts{
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .ad970x90 .slide2 .texts p{
+            margin-bottom: 5px;
+            margin-top: 0;
+            text-shadow: 1px 1px 7px #000;
+            position: relative;
+            opacity: 0;
+        }
+        .ad970x90 .slide2 .texts p span{
+            display: block;
+            float: left;
+            font-weight: bold;
+            padding-right: 10px;
+            padding: 5px;
+            background: rgba(33,62,128,1);
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: 2px;
+            box-shadow: 0px 0px 8px #fff; 
+            
+        }
+        .ad970x90 .slide2-text1{
+            animation: slide2-text 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 4.5s;
+        }
+        .ad970x90 .slide2-text2{
+            animation: slide2-text 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+        }
+        .ad970x90 .slide2-text3{
+            animation: slide2-text 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 5.5s;
+        }
+        @keyframes slide2-text{
+            0%{
+                top: 20px;
+                opacity: 0;
+            }
+            100%{
+                top: 0px;
+                opacity: 1;
+            }
+        }
+        
+        .ad970x90 .slide3 .text{
+            position: absolute;
+            color: #fff;
+            font-family: 'Domine', serif;
+            font-size: 24px;
+            margin: 0;
+            width: 708px;
+            text-align: center;
+            bottom: 4px;
+            left: 130px;
+        }
+        .ad970x90 .slide3 .text .slide3-text1{
+            background: rgba(33,62,128,.7);
+            padding: 3px;
+            color: #212121;
+            font-weight: bold;
+            opacity: 0;
+            animation: slide3-text1 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 9s;
+            background: rgba(255,181,11,.8);
+            transform-origin: top;
+        }
+
+        @keyframes slide3-text1{
+            0%{
+                bottom: -40px;
+                opacity: 1;
+                transform: rotateX(90deg);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateX(0deg);
+            }
+        }
+        .ad970x90 .slide3 .text .slide3-text2{
+            font-size: 22px;
+            padding: 2px;
+            line-height: 22px;
+            background: rgba(33,62,128,.7);
+            opacity: 0;
+            animation: slide3-text2 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 10s;
+            transform-origin: top;
+        }
+
+        @keyframes slide3-text2{
+            0%{
+                bottom: -40px;
+                opacity: 1;
+                transform: rotateX(-90deg);
+            }
+            100%{
+                opacity: 1;
+                transform: rotateX(0deg);
+            }
+        }
+        
+        .ad970x90 .copyright{
+            position: absolute;
+            bottom: 0px;right: 2px;
+            margin: 0;
+            font-size: 10px;
+            color: #fff;
+            animation: copyright 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 11s;
+            opacity: 0;
+        }
+        @keyframes copyright{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+         
+        
+    </style>
+</head>
+<body>
+   <!-- ad 970x90 start -->
+   <a href="https://callowayroofingfl.com/oviedo-fl-weather-storm-dates/?utm_source=geoAddress&utm_medium=mobile&utm_content=html5ad3&utm_campaign=Oviedo" class="ad-wrap">
+       <div class="ad970x90">
+          <div class="slide1">
+              <P class="slide1-text"><b>3 Top Reasons</b> Roofers Keep Knocking</P>
+          </div>
+          <div class="slide2">
+              <img src="image/home.jpg" alt="" class="slide2-image">
+              <div class="texts">
+                  <P class="slide2-text1"><span>1</span> A Recent Storm <b>Hit the Neighborhood.</b></P>
+                  <P class="slide2-text2"><span>2</span> Insurance <b>Paid for a Roof Replacement nearby.</b></P>
+                  <P class="slide2-text3"><span>3</span> Pending Claims <b>Need More Neighborhood Photographs.</b></P>
+              </div>
+          </div>
+          <div class="slide3">
+             <div class="text">
+              <div class="slide3-text1">Schedule a Free Storm and Roof Inspection</div>
+              <div class="slide3-text2">we'll mark note record everything and then come down and let you know what you are dealing with.</div>
+             </div>
+          </div>
+          <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+       </div>
+   </a>
+   <!-- ad 970x90 end -->
+   
+</body>
+</html>
